@@ -23,3 +23,17 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+
+
+ # adapter: mysql
+  #timeout: 5000
+  #encoding: utf8
+  #reconnect: false
+  #database: deploy_sample_production
+  #pool: 5
+  #username: deploy_sample
+  #password: secret
+  #host: localhost
+  #port: 5432
+
