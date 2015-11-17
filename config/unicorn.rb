@@ -1,4 +1,4 @@
-root = "/home/deployer/sample_dep/shared"
+root = "/home/deployer/sample_dep/current"
 working_directory root
 
 pid "#{root}/tmp/pids/unicorn.pid"
@@ -10,7 +10,11 @@ worker_processes Integer(ENV['WEB_CONCURRENCY'])
 timeout 30
 preload_app true
 
-listen '/tmp/unicorn.spui.sock', backlog: 64
+listen '/home/deployer/sample_dep/current/tmp/unicorn.sample_dep.sock', backlog: 64
+
+
+/home/deployer/sample_dep/current/tmp/unicorn.sample_dep.sock
+/home/deployer/sample_dep/current/tmp/unicorn.sample_dep.sock
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do

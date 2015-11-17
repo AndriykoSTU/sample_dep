@@ -12,6 +12,7 @@ require 'capistrano/rails/migrations'
 #   https://github.com/capistrano/rbenv
 #   https://github.com/capistrano/chruby
 #   https://github.com/capistrano/bundler
+require 'capistrano3/unicorn'
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
