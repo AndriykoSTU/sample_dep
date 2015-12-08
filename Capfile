@@ -22,7 +22,7 @@ require 'capistrano/rvm'
 require 'capistrano/bundler'
 #require 'capistrano/unicorn'
 require 'capistrano/rails'
-# require 'capistrano/rails/assets'
+require 'capistrano/rails/assets'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
